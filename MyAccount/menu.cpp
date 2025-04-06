@@ -2,4 +2,6 @@
 
 Menu::Menu(QWidget *parent)
     : QMainWindow{parent}
-{}
+{
+
+}

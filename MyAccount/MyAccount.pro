@@ -14,8 +14,6 @@ SOURCES += \
     goalsetting.cpp \
     main.cpp \
     menu.cpp \
-    menu.cpp \
-    menu.cpp \
     record.cpp \
     start.cpp
 
@@ -23,8 +21,6 @@ HEADERS += \
     analyze.h \
     function.h \
     goalsetting.h \
-    menu.h \
-    menu.h \
     menu.h \
     record.h \
     start.h
