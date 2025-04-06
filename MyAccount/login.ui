@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Login</class>
+ <widget class="QMainWindow" name="Login">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>账本系统登录</string>
+  </property>
+  <property name="styleSheet">
+     <string notr="true">
+      QMainWindow {
+        background-color: #FFF8E7;
+        background-image: url(:/resources/background/light_bg.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+      }
+
+      /* 保持您原有的控件样式 */
+      QLabel[objectName="titleLabel"] {
+        color: orange;
+        font-weight: bold;
+        font-size: 24px;
+      }
+
+      QLabel[objectName="usernameLabel"],
+      QLabel[objectName="passwordLabel"] {
+        color: orange;
+        font-weight: bold;
+        font-size: 18px;
+      }
+
+      QPushButton[objectName="loginButton"],
+      QPushButton[objectName="registerButton"] {
+        color: orange;
+        font-weight: bold;
+        font-size: 18px;
+        background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #F4A460, stop:1 #D2691E);
+        border-radius: 5px;
+        padding: 8px 15px;
+        border: 1px solid #CD853F;
+      }
+
+      QPushButton[objectName="loginButton"]:hover,
+      QPushButton[objectName="registerButton"]:hover {
+        background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #D2B48C, stop:1 #CD853F);
+      }
+
+      QLineEdit {
+        background-color: white;
+        border: 1px solid #D2B48C;
+        border-radius: 3px;
+        padding: 5px;
+        color: black;
+      }
+     </string>
+    </property>
+
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QLabel" name="titleLabel">
+      <property name="text">
+       <string>&lt;h1&gt;账本系统&lt;/h1&gt;</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <!-- 设置标题文字颜色为橙色，加粗，字体放大 -->
+      <property name="styleSheet">
+        <string>color: orange; font-weight: bold; font-size: 24px;</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QWidget" name="formWidget">
+      <layout class="QFormLayout" name="formLayout">
+       <item row="0" column="0">
+        <widget class="QLabel" name="usernameLabel">
+         <property name="text">
+          <string>用户名:</string>
+         </property>
+         <!-- 设置用户名标签文字颜色为橙色，加粗，字体放大 -->
+         <property name="styleSheet">
+           <string>color: orange; font-weight: bold; font-size: 18px;</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QLineEdit" name="usernameLineEdit"/>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="passwordLabel">
+         <property name="text">
+          <string>密码:</string>
+         </property>
+         <!-- 设置密码标签文字颜色为橙色，加粗，字体放大 -->
+         <property name="styleSheet">
+           <string>color: orange; font-weight: bold; font-size: 18px;</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QLineEdit" name="passwordLineEdit">
+         <property name="echoMode">
+          <enum>QLineEdit::Password</enum>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QWidget" name="buttonWidget">
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <widget class="QPushButton" name="loginButton">
+         <property name="text">
+          <string>登录</string>
+         </property>
+         <!-- 设置登录按钮文字颜色为橙色，加粗，字体放大 -->
+         <property name="styleSheet">
+           <string>color: orange; font-weight: bold; font-size: 18px;</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="registerButton">
+         <property name="text">
+          <string>注册</string>
+         </property>
+         <!-- 设置注册按钮文字颜色为橙色，加粗，字体放大 -->
+         <property name="styleSheet">
+           <string>color: orange; font-weight: bold; font-size: 18px;</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

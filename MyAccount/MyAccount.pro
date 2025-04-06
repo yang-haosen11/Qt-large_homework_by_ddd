@@ -1,5 +1,6 @@
 QT       += core gui
-
+QT        +=sql
+QT          +=charts
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
 CONFIG += c++17
@@ -12,24 +13,29 @@ SOURCES += \
     analyze.cpp \
     function.cpp \
     goalsetting.cpp \
+    login.cpp \
     main.cpp \
     menu.cpp \
-    record.cpp \
+    recordsInput.cpp \
     start.cpp
 
 HEADERS += \
     analyze.h \
     function.h \
     goalsetting.h \
+    login.h \
     menu.h \
-    record.h \
-    start.h
+    recordsInput.h \
+    start.h \
+    ui_analyze.h \
+    ui_recordsInput.h
 
 FORMS += \
+    analyze.ui \
+    login.ui \
+    menu.ui \
+    recordsInput.ui \
     start.ui
-
-TRANSLATIONS += \
-    MyAccount_zh_CN.ts
 CONFIG += lrelease
 CONFIG += embed_translations
 
@@ -37,3 +43,8 @@ CONFIG += embed_translations
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
+
+RESOURCES += \
+    resources.qrc
+
+DISTFILES +=

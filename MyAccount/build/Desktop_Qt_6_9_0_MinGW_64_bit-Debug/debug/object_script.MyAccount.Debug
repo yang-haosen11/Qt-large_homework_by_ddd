@@ -1,0 +1,16 @@
+debug/analyze.o
+debug/function.o
+debug/goalsetting.o
+debug/login.o
+debug/main.o
+debug/menu.o
+debug/recordsInput.o
+debug/start.o
+debug/qrc_resources.o
+debug/qrc_qmake_qmake_qm_files.o
+debug/moc_analyze.o
+debug/moc_function.o
+debug/moc_login.o
+debug/moc_menu.o
+debug/moc_recordsInput.o
+debug/moc_start.o

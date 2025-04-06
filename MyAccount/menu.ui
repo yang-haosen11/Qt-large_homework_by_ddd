@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Menu</class>
+ <widget class="QMainWindow" name="Menu">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>600</width>
+    <height>400</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>账本系统 - 主菜单</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">
+    QMainWindow {
+    background-color: #FFF8E7;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+    }
+
+QPushButton {
+    background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+                                     stop:0 #F4A460, stop:1 #D2691E);
+    color: #000000;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    min-height: 60px;
+    padding-left: 20px; /* 为图标留出空间 */
+    text-align: left; /* 文字左对齐 */
+    border: 1px solid #CD853F;
+}
+
+QPushButton:hover {
+    background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+                                     stop:0 #D2B48C, stop:1 #CD853F);
+    border: 1px solid #8B4513;
+}
+
+QPushButton:pressed {
+    background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+                                     stop:0 #CD853F, stop:1 #8B4513);
+}
+
+    QLabel {
+        color: #000000;
+        font-family: "Microsoft YaHei", "SimHei", "WenQuanYi Micro Hei";
+    }
+
+    #welcomeLabel {
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    QMenuBar {
+        background-color: #FFF8E7;
+        color: #000000;
+    }
+
+    QMenuBar::item:selected {
+        background-color: #F4A460;
+    }
+
+    QMenu {
+        background-color: #FFF8E7;
+        color: #000000;
+    }
+
+    QMenu::item:selected {
+        background-color: #F4A460;
+    }
+
+    /* 自定义消息框样式 */
+    QMessageBox {
+        background-color: #FFF8E7;
+    }
+
+    QMessageBox QLabel {
+        color: #000000;
+        font-size: 16px;
+    }
+
+    QMessageBox QPushButton {
+        background-color: #F4A460;
+        color: #000000;
+        border-radius: 6px;
+        padding: 8px 15px;
+    }
+   </string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QLabel" name="welcomeLabel">
+      <property name="text">
+       <string>欢迎回来，用户</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <spacer name="verticalSpacer">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>20</width>
+        <height>30</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item alignment="Qt::AlignLeft"> <!-- 按钮居左 -->
+     <widget class="QPushButton" name="incomeExpenseRecordButton">
+      <property name="text">
+       <string>收支记录</string>
+      </property>
+      <property name="icon">
+          <iconset resource="resources.qrc">
+              <normaloff>:/resources/icons/record.jpg</normaloff>:/resources/icons/record.jpg</iconset>
+      </property>
+      <property name="iconSize">
+          <size>
+              <width>32</width>
+              <height>32</height>
+          </size>
+      </property>
+      <property name="maximumWidth">
+       <number>500</number> <!-- 增加按钮宽度 -->
+      </property>
+     </widget>
+    </item>
+    <item>
+     <spacer name="verticalSpacer_2">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>20</width>
+        <height>15</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item alignment="Qt::AlignLeft"> <!-- 按钮居左 -->
+     <widget class="QPushButton" name="incomeExpenseAnalysisButton">
+      <property name="text">
+       <string>收支分析</string>
+       </property>
+       <property name="icon">
+           <iconset resource="resources.qrc">
+               <normaloff>:/resources/icons/analysis.jpg</normaloff>:/resources/icons/analysis.jpg</iconset>
+       </property>
+       <property name="iconSize">
+           <size>
+               <width>32</width>
+               <height>32</height>
+           </size>
+       </property>
+      <property name="maximumWidth">
+       <number>500</number> <!-- 增加按钮宽度 -->
+      </property>
+     </widget>
+    </item>
+    <item>
+     <spacer name="verticalSpacer_3">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>20</width>
+        <height>15</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item alignment="Qt::AlignLeft"> <!-- 按钮居左 -->
+     <widget class="QPushButton" name="achievementSystemButton">
+      <property name="text">
+       <string>成就系统</string>
+       </property>
+       <property name="icon">
+           <iconset resource="resources.qrc">
+               <normaloff>:/resources/icons/achievement.png</normaloff>:/resources/icons/achievement.png</iconset>
+       </property>
+       <property name="iconSize">
+           <size>
+               <width>32</width>
+               <height>32</height>
+           </size>
+       </property>
+      <property name="maximumWidth">
+       <number>500</number> <!-- 增加按钮宽度 -->
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>600</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuSettings">
+    <property name="title">
+     <string>设置</string>
+    </property>
+    <widget class="QMenu" name="menuTheme">
+     <property name="title">
+      <string>主题</string>
+     </property>
+     <addaction name="actionLightTheme"/>
+     <addaction name="actionDarkTheme"/>
+    </widget>
+    <addaction name="menuTheme"/>
+    <addaction name="actionSeparator"/>
+    <addaction name="actionLogout"/>
+   </widget>
+   <addaction name="menuSettings"/>
+  </widget>
+  <action name="actionLightTheme">
+   <property name="text">
+    <string>亮色主题</string>
+   </property>
+  </action>
+  <action name="actionDarkTheme">
+   <property name="text">
+    <string>暗色主题</string>
+   </property>
+  </action>
+  <action name="actionSeparator">
+   <property name="separator">
+    <bool>true</bool>
+   </property>
+  </action>
+      <action name="actionLogout">
+   <property name="text">
+    <string>退出登录</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
