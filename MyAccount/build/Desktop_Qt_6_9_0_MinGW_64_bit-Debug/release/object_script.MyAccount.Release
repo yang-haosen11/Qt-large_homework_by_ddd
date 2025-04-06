@@ -1,0 +1,15 @@
+release/analyze.o
+release/function.o
+release/goalsetting.o
+release/login.o
+release/main.o
+release/menu.o
+release/record.o
+release/start.o
+release/qrc_resources.o
+release/qrc_qmake_qmake_qm_files.o
+release/moc_analyze.o
+release/moc_function.o
+release/moc_login.o
+release/moc_menu.o
+release/moc_start.o

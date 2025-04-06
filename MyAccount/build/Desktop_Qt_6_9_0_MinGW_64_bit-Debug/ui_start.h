@@ -35,7 +35,7 @@ public:
         Start->setCentralWidget(centralwidget);
         menubar = new QMenuBar(Start);
         menubar->setObjectName("menubar");
-        menubar->setGeometry(QRect(0, 0, 800, 18));
+        menubar->setGeometry(QRect(0, 0, 800, 24));
         Start->setMenuBar(menubar);
         statusbar = new QStatusBar(Start);
         statusbar->setObjectName("statusbar");
