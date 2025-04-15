@@ -1,5 +1,5 @@
 #include "start.h"
-
+#include "analyze.h"
 #include <QApplication>
 #include <QLocale>
 #include <QTranslator>
@@ -19,5 +19,8 @@ int main(int argc, char *argv[])
     }
     Start w;
     w.show();
+    Analyze* Anal = new Analyze;
+    int ans = Anal->AIAnalyze();
+    // std::cout << ans << std::endl;
     return a.exec();
 }
