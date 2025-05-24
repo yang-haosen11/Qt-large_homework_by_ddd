@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Analyze</class>
+ <widget class="QWidget" name="Analyze">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1133</width>
+    <height>768</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QPushButton" name="backBtn">
+   <property name="geometry">
+    <rect>
+     <x>1050</x>
+     <y>710</y>
+     <width>61</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>14</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>返回上级</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="exitBtn">
+   <property name="geometry">
+    <rect>
+     <x>980</x>
+     <y>20</y>
+     <width>80</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>14</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>退出应用</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="ChartChooseBtn">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>20</y>
+     <width>141</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <item>
+    <property name="text">
+     <string>本周饼状图分析-&gt;各项占比</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>本周树状图分析-&gt;每天对比</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>月度饼状图分析-&gt;各项占比</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>月度树状图分析-&gt;每周对比</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QWidget" name="ChartContainer" native="true">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>90</y>
+     <width>611</width>
+     <height>611</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="AIptn">
+   <property name="geometry">
+    <rect>
+     <x>870</x>
+     <y>120</y>
+     <width>91</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>AI智慧分析</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="AItextcontainer" native="true">
+   <property name="geometry">
+    <rect>
+     <x>780</x>
+     <y>190</y>
+     <width>271</width>
+     <height>171</height>
+    </rect>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
