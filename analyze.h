@@ -19,7 +19,7 @@
 #include <windows.h>
 #pragma push_macro("slots")
 #undef slots //用于由于slots在Qt和Python都是关键字，互相冲突
-#include <Python.h>
+//#include <Python.h>
 #pragma pop_macro("slots")
 
 
@@ -34,14 +34,14 @@ QT_END_NAMESPACE
 
 
 
-class Analyze : public Function
+class Analyze : public QMainWindow
 {
     Q_OBJECT
-private:
     QFile file;
     std::string question;
     Ui::Analyze *ui;
     QList<QSqlRecord> result_month;
+    QList<QSqlRecord> result_week;
     QAbstractSeries *currentSeries;
     QChartView *currentChartView;
     QScrollArea *scrollArea;
@@ -60,9 +60,15 @@ public:
     //制表：每周、每月树状、饼状图，共计四张
     bool initDatabase();//数据库创建
     void GetLastMonthData();
+    void GetLastWeekData();
 public slots:
     void MakeCharts(int flag);
     void AItext();
+signals:
+    void closed(); // 关闭信号
+
+protected:
+    void closeEvent(QCloseEvent *event) override; // 重写关闭事件
 };
 
 #endif // ANALYZE_H
