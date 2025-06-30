@@ -1,0 +1,18 @@
+<RCC>
+    <qresource prefix="/">
+        <file>resources/icons/achievement.png</file>
+        <file>resources/icons/analysis.jpg</file>
+        <file>resources/icons/moon.jpg</file>
+        <file>resources/icons/record.jpg</file>
+        <file>resources/icons/sun.jpg</file>
+        <file>resources/background/light_bg.png</file>
+        <file>resources/icons/chizhiyiheng.png</file>
+        <file>resources/icons/diyitongjin.png</file>
+        <file>resources/icons/jingjingyoutiao.png</file>
+        <file>resources/icons/xingyunsanyecao.png</file>
+        <file>resources/icons/locked.png</file>
+        <file>resources/icons/unlocked.png</file>
+        <file>resources/icons/licaixiaoshuihua.png</file>
+        <file>resources/background/dark.png</file>
+    </qresource>
+</RCC>

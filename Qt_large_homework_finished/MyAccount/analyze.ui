@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Analyze</class>
+ <widget class="QMainWindow" name="Analyze">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>  <!-- 宽度从911缩小到800 -->
+    <height>600</height>  <!-- 高度从611调整为600 -->
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>数据分析</string>  <!-- 修改窗口标题 -->
+  </property>
+  <property name="styleSheet">
+   <string notr="true">
+    /* 主窗口背景图设置 */
+    QMainWindow {
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+
+    /* 子控件样式 */
+    QPushButton {
+      background-color: rgba(255, 255, 255, 0.7);
+      border: 1px solid rgba(0, 0, 0, 0.2);
+      border-radius: 4px;
+      padding: 5px;
+      min-width: 80px;
+    }
+
+    QPushButton:hover {
+      background-color: rgba(255, 255, 255, 0.9);
+    }
+
+    QComboBox {
+      background-color: rgba(255, 255, 255, 0.7);
+      padding: 5px;
+      min-width: 200px;
+    }
+
+    QLabel {
+      background: transparent;
+    }
+
+    /* 图表容器 */
+    #ChartContainer {
+      background-color: rgba(255, 255, 255, 0.8);
+      border-radius: 8px;
+    }
+   </string>
+  </property>
+
+  <!-- 返回按钮 -->
+  <widget class="QPushButton" name="backBtn">
+   <property name="geometry">
+    <rect>
+     <x>700</x>  <!-- 调整位置 -->
+     <y>550</y>
+     <width>80</width>  <!-- 缩小尺寸 -->
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>  <!-- 减小字体 -->
+    </font>
+   </property>
+   <property name="text">
+    <string>返回</string>  <!-- 简化文字 -->
+   </property>
+  </widget>
+
+  <!-- 退出按钮 -->
+  <widget class="QPushButton" name="exitBtn">
+   <property name="geometry">
+    <rect>
+     <x>700</x>  <!-- 调整位置 -->
+     <y>20</y>
+     <width>80</width>  <!-- 缩小尺寸 -->
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>退出</string>  <!-- 简化文字 -->
+   </property>
+  </widget>
+
+  <!-- 图表选择下拉框 -->
+  <widget class="QComboBox" name="ChartChooseBtn">
+   <property name="geometry">
+    <rect>
+     <x>150</x>  <!-- 向左移动 -->
+     <y>20</y>
+     <width>300</width>  <!-- 适当加宽 -->
+     <height>30</height>
+    </rect>
+   </property>
+   <item>
+    <property name="text">
+     <string>本周饼状图-各项占比</string>  <!-- 简化选项文字 -->
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>本周树状图-每天对比</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>月度饼状图-各项占比</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>月度树状图-每周对比</string>
+    </property>
+   </item>
+  </widget>
+
+  <!-- 图表容器 -->
+  <widget class="QWidget" name="ChartContainer" native="true">
+   <property name="geometry">
+    <rect>
+     <x>20</x>  <!-- 向左移动 -->
+     <y>60</y>
+     <width>760</width>  <!-- 缩小尺寸 -->
+     <height>520</height>
+    </rect>
+   </property>
+  </widget>
+
+  <!-- 提示标签 -->
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>20</x>  <!-- 向左移动 -->
+     <y>20</y>
+     <width>120</width>  <!-- 调整尺寸 -->
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>微软雅黑</family>  <!-- 修改字体 -->
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>选择图表类型:</string>  <!-- 修改文字 -->
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
